@@ -1,0 +1,414 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+/*--------------------------------------------------------------------------------------------------------------------  NAVIGATION BAR  ------*/
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navigate{
+    background-color: var(--primary-color);
+    flex-direction: row;
+    gap: 40px;
+     
+}
+.navigate ul{
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10px;
+}
+.navlinks ul :hover {
+    transform: scale(1.2);
+   color: var(--primary-text-color);
+ }
+
+ .logo{
+    width: 20%;
+    flex-direction: row;
+    gap: 5px;  
+}
+.logo:hover{
+   text-decoration: none;
+    
+}
+.logo img{
+width: 20%;
+border-radius: 50px;
+border: 2px solid var(--secondary-text-color);
+}
+
+.rewards{
+    
+        background-color:orangered;
+        color: white;
+        padding: 4px 8px;
+        text-align: center;
+        border-radius: 5px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------  FIRST-SECTION  ------*/
+.firstsection{
+   height: 100vh;
+   background-image: linear-gradient( var(--primary-color), var(--primary-text-color));
+   background-size: cover;
+}
+.box-main{
+    height: 80%;
+    max-width: 50%;
+    margin: auto;
+    gap: 50px;
+flex-direction: row;
+}
+.first-box{
+    width: 50%;
+    flex-direction: column;
+}
+.first-box h1, .first-box p{
+    color: var(--primary-text-color);
+}
+.second-box{
+    width: 50%;  
+}
+.second-box img{
+    width: 150%;
+    border-radius: 150px;
+    display: block;
+  
+}
+.button{
+    flex-direction: row;
+    gap: 10px;
+}
+/*-----------------------------------------------------------------------------------------------------------------  APPLY CODE FOR OFFER ------*/
+
+.code{
+    justify-content: center;
+    gap: 20px;
+}
+.code img{
+    width: 100%;    
+}
+.code-content{  
+    width: 60vw;
+    flex-direction: column;
+    text-align: center; 
+}
+.code-content h1, .code-content p{  
+   color: black; 
+   
+}
+.coupon {
+	width: 250px;
+	padding: 10px;
+	text-align: center;
+	border: 3px dashed var(--primary-color);
+ }
+/*--------------------------------------------------------------------------------------------------------------------  EDUCATORS ------*/
+
+    .top-educators{
+        margin-top: 8px;
+        position: relative;
+    }
+    .educators{
+        gap: 5px;
+    }
+    .educators-details img{
+        width: 20%;
+        height: 80%;     
+        }
+    
+    .educators-desc{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .educators-details a{
+        color: var(--secondary-text-color);
+    }
+    .educators-details a:hover{
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+/*--------------------------------------------------------------------------------------------------------------------  BATCHES ------*/
+   .batches-details{
+ justify-content: space-evenly;
+ gap: 10px;
+   }
+.batch-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.batch-desc ul{
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: circle;
+}
+.card-text ul {
+    flex-direction: column;
+  list-style: circle;
+}
+.card:hover{
+cursor: pointer;
+box-shadow: 2px 5px 2px 5px var(--primary-color);
+}
+
+.card-body a{
+    color: var(--secondary-text-color);
+}
+.card-body a:hover{
+    color: var(--primary-color);
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------  STUDY-MATERIALS  ------*/
+.study{
+    flex-direction: row;
+    gap: 100px;
+    text-align: center;
+    
+}
+.study-card{
+    width: 18%;
+}
+.study-card img{
+    width: 80%;
+    border: 3px solid var(--primary-color);
+    border-radius: 150px;
+}
+.hide{
+    display: none;
+}
+.div:hover +.hide{
+    display: block;
+    transition: ease;
+}
+.study-materials{
+    position: relative;
+}
+.study-see-all{
+position: absolute;
+    right: 8vh;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------  FAME WALL  ------*/
+    .fame-wall{
+        max-width: 1000px;
+        margin-top: 8px;
+    }
+    .gallery{
+        gap: 5px;
+    }
+    .user{
+    flex-direction: column;
+    justify-content: space-between;
+    
+    }
+    .image img{
+    width: 30%;
+    height: 30%;
+    border: 4px solid var(--primary-color);
+    border-radius: 150px;
+    }
+    
+    .image p{
+       color: black;
+       text-align: start;
+        }
+
+
+
+
+
+      
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------  FOOTER  ------*/
+
+footer{
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    padding: 20px;
+
+}
+footer p{
+    color: var(--primary-text-color);
+}
+footer ul{
+    flex-direction: column;
+}
+.right{
+    flex-direction: column;
+    width: 60%;
+}
+.left{
+    width: 40%;
+}
+.comp-name{
+    flex-direction: column;
+    
+}
+.logo-footer {
+    flex-direction: row;
+    gap: 5px;
+   
+}
+.logo-footer img{
+    width:50px;
+    border-radius: 50px;
+   
+}
+.detail-links{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.detail-links ul a:hover{
+   color: var(--primary-text-color);
+}
+
+.visit ul{
+flex-direction: row;
+gap: 8px;
+font-size: 20px;
+text-align: center;
+}
+.visit a{
+    color: var(--primary-text-color);
+    }
+.visit ul li:hover{
+       transform: scale(1.3);
+        }
+ /*--------------------------------------------------------------------------------------------------------------------  SUBFOOTER  ------*/         
+
+ .subfooter {
+   
+    background-color: var(--primary-color);
+  text-align: right;
+    
+}
+
+.subfooter a{
+    color: var(--primary-text-color);
+ 
+    
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------  SCROLL-UP-ARROW  ------*/         
+
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 25px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: orangered; 
+    color: var(--primary-text-color);
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 50px; 
+    font-size: 10px; 
+  }
+  
+  #myBtn:hover {
+   transform: scale(1.2);
+  }
+
+/*--------------------------------------------------------------------------------------------------------------------  SESSION-FORM  ------*/         
+
+  input[type="submit"]{
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none ;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    margin: 10px;
+   text-align: left;
+}
+
+.form{
+    flex-direction: row;
+   gap: 30px;
+}
+.from-img img{
+    border-radius: 150px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------  SUCESS-STORIES  ------*/         
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+  }
+  
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color:var(--primary-text-color);
+    color: var(--primary-color);
+    transform: rotateY(180deg);
+  }
+  .flip-card-front img{
+    width: 200px;
+    border-radius: 100px;
+  }
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------  NAV-TOGGLE  ------*/         
+
+  #nav-toggle{  
+    display: none;
+ }

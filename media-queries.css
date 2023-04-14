@@ -1,0 +1,90 @@
+@media screen and (max-width: 991px) {
+  nav{
+      margin-top: 10px;
+  }
+  .logo img{
+   width: 30%;
+   border-radius: 80px;
+   border: 2px solid var(--secondary-text-color);
+   }
+   #nav-toggle{  
+       display: block;
+       position: absolute;
+       right: 4vh;
+       color: var(--primary-text-color);
+    }
+    .navlinks ul{
+       flex-direction: column;
+    }
+   .navlinks{
+       position: absolute;
+       z-index: 5;
+       color: var(--secondary-text-color);
+       background-color: var(--primary-color);
+       right: 0;
+       width: 100%;
+       height: fit-content;
+       transition: 0.2s ease-in-out;
+       align-items: center;
+       text-align: center;
+       font-size: 14px;
+       font-weight: 500;
+       top: 65px;     
+   }
+   .navlinks.active{
+      display: none;
+      
+   }
+   .box-main{
+    flex-direction: column-reverse;
+    max-width: 100%;
+    gap: 5px;
+ }
+
+ .second-box img{
+    width: 80%;
+}
+ 
+ .code{
+    flex-direction: column;
+  }
+
+  .batches-details{
+    flex-direction: column;
+  }  
+
+}
+  @media screen and (max-width: 770px) {
+   
+    .second-box img{
+        width: 50%;
+    }
+  .educators-details{
+    flex-direction: column;
+  }
+  .study{
+    flex-direction: column;
+  }
+
+  .story-cards{
+    flex-direction: column;
+  }
+
+  .fame-wall{
+    display: none;
+}
+.from-img{
+    display: none;
+  }
+footer{
+  flex-direction: column;
+  justify-content: stretch;
+}
+  }
+  
+  @media screen and (max-width: 480px){
+    .second-box img{
+        display: none;
+    } 
+    
+  }
